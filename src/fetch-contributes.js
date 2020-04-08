@@ -7,7 +7,7 @@ const $ = require('isomorphic-parse');
 const moment = require("moment");
 
 function getCreatedDateOfGitHubUser(user) {
-    return fetch(`https://github-contributions-api.now.sh/v1/${encodeURIComponent(user)}`)
+    return fetch(`https://github-contributions.now.sh/api/v1/${encodeURIComponent(user)}`)
         .then(res => res.json())
 }
 
